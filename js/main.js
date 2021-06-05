@@ -21,6 +21,11 @@
   
 // });
 
+window.onload = function(){
+    let preloader = document.getElementById('preloader');
+    preloader.style.display = "none";
+}
+
 let front = document.getElementById('my-card-front');
 let back = document.getElementById('my-card-back');
 let author = document.getElementById('authorise');
@@ -32,10 +37,10 @@ author.onclick = function() {
     back.style.cssText = 'transform: rotateY(360deg)';
     author.style.cssText = 'display: none'
 }
-// backHome.onclick = function() {
-//     // front.style.cssText = 'transform: rotate(0deg)';
-//     back.style.cssText = 'transform: rotateY(180deg)';
-//     author.style.cssText = 'display: inline'
-// }
+backHome.onclick = function() {
+    front.style.cssText = 'transform: rotate(0deg)';
+    back.style.cssText = 'transform: rotateY(180deg)';
+    author.style.cssText = 'display: inline'
+}
 
 
