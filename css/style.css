@@ -43,8 +43,9 @@ body .wrap {
   align-items: center;
 }
 body .wrap .my-card {
-  width: 381px;
-  height: 450px;
+  width: 321px;
+  height: 400px;
+  box-sizing: content-box;
   padding: 2.5rem;
   perspective: 1000px;
   margin-top: 125px;
@@ -95,7 +96,7 @@ body .wrap .my-card .front .soc-med svg:hover svg {
 body .wrap .my-card .front .row {
   width: 100%;
   position: relative;
-  top: 4.3%;
+  top: 6%;
 }
 body .wrap .my-card .front .row div {
   width: 100%;
@@ -165,9 +166,9 @@ body .wrap .my-card .back .checking label {
   margin: 0 1rem;
 }
 body .wrap .my-card .back .row {
-  width: 381px;
+  width: 401px;
   position: relative;
-  top: 12.3%;
+  top: 14.5%;
 }
 body .wrap .my-card .back .row div {
   width: 100%;
