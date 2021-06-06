@@ -17,8 +17,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../img/bg-04.jpg");
-  background-size: cover;
+  background-image: url("../img/bg-04.JPG");
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -224,7 +224,7 @@ body .menu-block .menu-after {
   display: block;
 }
 body nav {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #fd4c4cb0;
   position: absolute;
@@ -250,6 +250,7 @@ body nav .links a {
 }
 body .wrap {
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -270,12 +271,12 @@ body .wrap h2 {
 }
 body .wrap .rev-tri {
   position: absolute;
-  bottom: 0;
+  bottom: -1vw;
   z-index: 95;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 20vh 50vw 0 50vw;
+  border-width: 20vh 49.5vw 1vw 49.5vw;
   border-color: transparent #bebebe #bebebe #bebebe;
   margin: 0;
   padding: 0;
@@ -305,6 +306,39 @@ body .container .row .col-4 {
   text-align: center;
   color: #bebebe;
   padding: auto auto;
+}
+body .wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #bebebe;
+  margin: 0;
+  padding: 10vh 0;
+}
+body .wrapper .slider {
+  width: 80vw;
+  margin: 0 auto;
+}
+body .wrapper .slider .slide {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2vw 0;
+}
+body .wrapper .slider .slide .text {
+  width: 100%;
+  padding: 2vw;
+}
+body .wrapper .slider .slide .text h3 {
+  font-weight: 600;
+}
+body .wrapper .slider .slide .text h4 {
+  font-size: 20px;
+}
+body .wrapper .slider .slide .slide-img {
+  width: 100%;
+}
+body .wrapper .slider .slide .slide-img img {
+  width: 100%;
 }
 
 @keyframes arrowDownOne {

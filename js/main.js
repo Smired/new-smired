@@ -21,10 +21,10 @@
   
 // });
 
-window.onload = function(){
+setTimeout(window.onload = function(){
     let preloader = document.getElementById('preloader');
     preloader.style.display = "none";
-}
+}, 20000)
 
 let front = document.getElementById('my-card-front');
 let back = document.getElementById('my-card-back');

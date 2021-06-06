@@ -161,8 +161,8 @@ $sec-col: #c53c3c
 body
     margin: 0
     padding: 0
-    background-image: url('../img/bg-04.jpg')
-    background-size: cover
+    background-image: url('../img/bg-04.JPG')
+    background-size: contain
     background-repeat: no-repeat
     font-family: Arial, Helvetica, sans-serif
     .autor
@@ -308,7 +308,7 @@ body
             top: calc(50% + 7.5px) 
             display: block
     nav
-        width: 100vw
+        width: 100%
         height: 100vh
         background-color: #fd4c4cb0
         position: absolute
@@ -331,6 +331,7 @@ body
                 font-weight: 600
     .wrap
         height: 100vh
+        width: 100%
         display: flex
         justify-content: center
         flex-direction: column
@@ -348,12 +349,12 @@ body
         .rev-tri
             // background-color: #bebebe
             position: absolute
-            bottom: 0
+            bottom: -1vw
             z-index: 95
             width: 0
             height: 0
             border-style: solid
-            border-width: 20vh 50vw 0 50vw
+            border-width: 20vh 49.5vw 1vw 49.5vw
             border-color: transparent #bebebe #bebebe #bebebe
             margin: 0
             padding: 0
@@ -385,6 +386,34 @@ body
     //     margin: -15px 0 0 
     //     padding: 0
     //     box-sizing: padding-box
+
+    .wrapper
+        width: 100%
+        height: 100vh
+        background-color: #bebebe
+        margin: 0
+        padding: 10vh 0
+        .slider
+            width: 80vw
+            margin: 0 auto
+            .slide
+                width: 100%
+                display: flex
+                justify-content: space-evenly
+                margin: 2vw 0
+                .text
+                    width: 100%
+                    padding: 2vw
+                    h3
+                        font-weight: 600
+                    h4
+                        font-size: 20px
+                .slide-img
+                    width: 100%
+                    img
+                        width: 100%
+
+
 
 @keyframes arrowDownOne
     0%
