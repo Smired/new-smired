@@ -43,4 +43,3 @@ backHome.onclick = function() {
     author.style.cssText = 'display: inline'
 }
 
-
